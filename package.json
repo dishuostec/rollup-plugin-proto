@@ -1,0 +1,33 @@
+{
+  "name": "@dishuostec/rollup-plugin-proto",
+  "version": "0.0.1",
+  "description": "Rollup probobuf(.proto) files.",
+  "main": "dist/index.js",
+  "scripts": {
+    "pretest": "npm run build",
+    "build": "rollup -c",
+    "release": "git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dishuostec/rollup-plugin-proto.git"
+  },
+  "keywords": [
+    "rollup",
+    "rollup-plugin",
+    "protobuf"
+  ],
+  "author": "dishuostec <dishuostec@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "pbf": "^3.2.0",
+    "protocol-buffers-schema": "^3.3.2",
+    "rollup-pluginutils": "^2.8.1"
+  },
+  "devDependencies": {
+    "rollup": "^1.0.2"
+  }
+}
