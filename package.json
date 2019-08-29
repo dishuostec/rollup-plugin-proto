@@ -1,6 +1,6 @@
 {
   "name": "@dishuostec/rollup-plugin-proto",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Rollup probobuf(.proto) files.",
   "main": "dist/index.js",
   "scripts": {
